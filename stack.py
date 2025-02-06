@@ -22,12 +22,10 @@ class Stack:
         return len(self.stack)
     
 N = int(input())
-
 stack = Stack()
-
 for _ in range(N):
     command = input().split()
-    
+
     if command[0] == 'push':
         stack.push(command[1])
     elif command[0] == 'pop':
